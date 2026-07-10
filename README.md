@@ -1,1 +1,1 @@
-# Proyecto-Mecatr-nica---EVA
+# Proyecto-Mecatronica-EVA
