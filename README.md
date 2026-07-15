@@ -1,4 +1,4 @@
-# Proyecto-Mecatronica-EVA
+# Proyecto-Mecatronica 4250-EVA
 ## Integrantes
 * Agustín Ketterer
 * Isabella Silva
@@ -11,3 +11,11 @@
 ## Ayudantes
 * Valentina Abarca
 * Emilia Gutierrez
+# Índice de contenidos
+* [Descripción]
+* [Objetivos]
+* [Listado de materiales]
+* [Diseño]
+* [Electrónica]
+* [Software y lógica]
+* [Multimedia]
