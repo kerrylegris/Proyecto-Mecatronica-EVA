@@ -10,7 +10,7 @@
 * Fernando Navarrete
 ## Ayudantes
 * Valentina Abarca
-* Emilia Gutierrez
+* Emilia Gutiérrez
 # Índice de contenidos
 * [Descripción]
 * [Objetivos]
