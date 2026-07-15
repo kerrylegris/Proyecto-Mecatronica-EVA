@@ -14,7 +14,7 @@
 # Índice de contenidos
 * [Descripción](#descripción)
 * [Objetivos](#objetivos)
-* [Listado de materiales](./Listado de materiales/)
+* [Listado de materiales](./Listado-de-materiales/README.mdlistado-de-materiales)
 * [Diseño]
 * [Electrónica]
 * [Software y lógica]
