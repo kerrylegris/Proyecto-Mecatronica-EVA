@@ -12,9 +12,9 @@
 * Valentina Abarca
 * Emilia Gutiérrez
 # Índice de contenidos
-* [Descripción]
-* [Objetivos]
-* [Listado de materiales]
+* [Descripción](./README.md/Descripción)
+* [Objetivos](./README.md/Objetivos)
+* [Listado de materiales](./Listado de materiales/README.md)
 * [Diseño]
 * [Electrónica]
 * [Software y lógica]
