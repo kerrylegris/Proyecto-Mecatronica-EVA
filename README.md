@@ -18,7 +18,7 @@
 * [Diseño]
 * [Electrónica]
 * [Software y lógica]
-* [Archivos CAD]
+* [Archivos CAD](./EVA%20CADs/)
 * [Códigos]
 * [Multimedia]
   
