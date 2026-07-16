@@ -19,7 +19,7 @@
 * [Electrónica](./Electrónica)
 * [Software y lógica](./Software)
 * [Archivos CAD](./EVA%20CADs/)
-* [Códigos](./Códigos)
+* [Códigos](/Código)
 * [Multimedia](/Multimedia)
   
 # Descripción
