@@ -3,7 +3,7 @@
 * Agustín Ketterer
 * Isabella Silva
 * Katalyna Tapia
-* Joaquín Zuñiga
+* Joaquín Zúñiga
 ## Profesor
 * Harold Valenzuela
 ## Auxiliar
