@@ -3,10 +3,10 @@
 ### Estructura
 | Componente | Cant. | Material | Proceso | Archivo asociado |
 | :--- | :---: | :---: | :---: | ---: |
-| Cabeza EVA |1| PETG y PLA | Impresión 3D | Cabeza EVA |
-| Carcasa EVA |1| PETG | Impresión 3D | - |
-| Niveles chásis |3| Acrílico | Corte láser | Niveles |
-| Barras estructurales |8| PLA | Impresión 3D | Barras|
+| Cabeza EVA |1| PETG y PLA | Impresión 3D | Cabeza EVA, parte trasera y delantera |
+| Carcasa EVA |1| PETG | Impresión 3D | Carcasas |
+| Placas |3| Acrílico | Corte láser | Placa base, media y superior |
+| Barras estructurales |8| PLA | Impresión 3D | Barras 40mm y 50mm|
 | Ruedas |2| Plástico | - | - |
 | Pernos | 8 | Acero comercial | - | |-|
 ### Electrónica
