@@ -17,7 +17,7 @@
 # Índice de contenidos
 * [Descripción](#descripción)
 * [Objetivos](#objetivos)
-* [Listado de Materiales](./Listado%20de%20materiales/README.md#listado%20de%20materiales)
+* [Listado de materiales](#listado-de-materiales)
 * [Diseño](./Diseño/README.md)
 * [Electrónica](./Electrónica)
 * [Software y lógica](./Software)
@@ -49,5 +49,24 @@ Para lograr este objetivo, se integrarán componentes electrónicos esenciales u
 Es importante definir que el alcance del proyecto se centra en la integración exitosa del hardware y en la demostración de un sistema de autobalanceo. Por lo tanto, aunque el prototipo físico deba lidiar con las complejidades de un centro de masa elevado debido a su diseño asimétrico, el objetivo principal radica en la aplicación práctica de la teoría de control para superar este reto.
 
 # Listado de materiales
+## Hardware
+### Estructura
+| Componente | Cant. | Material | Proceso | Archivo asociado |
+| :--- | :---: | :---: | :---: | ---: |
+| Cabeza EVA |1| PETG y PLA | Impresión 3D | Cabeza EVA, parte trasera y delantera |
+| Carcasa EVA |1| PETG | Impresión 3D | Carcasas |
+| Placas |3| Acrílico | Corte láser | Placa base, media y superior |
+| Barras estructurales |8| PLA | Impresión 3D | Barras 40mm y 50mm|
+| Ruedas |2| Plástico | - | - |
+| Pernos | 8 | Acero comercial | - | |-|
+### Electrónica
+| Componente | Cant. | Uso | 
+| :--- | :---: | ---: |
+| Placa Arduino UNO R3|1| Unidad lógica |
+| Sensor MPU-6050 |1 | Medición de ángulo | 
+| Driver L298N | 2 | Controlador de los motores |
+| Motor 6V | 2 | Actuadores para el movimiento del robot |
+| Batería 3,7 V | 2 | Sistema de alimentación del sistema |
+| Cables de conexión | 10 | Conexión de los componentes electrónicos |
 
 
