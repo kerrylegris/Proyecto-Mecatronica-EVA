@@ -19,8 +19,8 @@
 * [Objetivos](#objetivos)
 * [Listado de materiales](#listado-de-materiales)
 * [Diseño](#diseño)
-* [Electrónica](./Electrónica)
-* [Software y lógica](./Software)
+* [Electrónica](#electrónica)
+* [Software y lógica](#software-y-lógica)
 * [Archivos CAD](./EVA%20CADs/)
 * [Códigos](#código)
 * [Multimedia](./Multimedia)
@@ -92,7 +92,7 @@ La solución: Se descartó la placa vertical en favor de un chasis interno estru
 El impacto: Esta nueva arquitectura permitió independizar el sistema estructural de la carcasa externa. Al tener niveles, se logró bajar drásticamente el centro de gravedad ubicando la batería y los motores en la base, lo cual fue fundamental para compensar la alta inercia generada por el apéndice superior impreso en 3D (la cabeza de EVA).
 
 
-# Código
+# Software y lógica
 El bloque de texto que contiene el código con el que se programó el PID se puede encontrar en su respectiva [carpeta](./Código).
 A continuación se puede observar el diagrama de lógica que sigue la programación de EVA.
 <details>
