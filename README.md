@@ -48,3 +48,6 @@ Para lograr este objetivo, se integrarán componentes electrónicos esenciales u
 
 Es importante definir que el alcance del proyecto se centra en la integración exitosa del hardware y en la demostración de un sistema de autobalanceo. Por lo tanto, aunque el prototipo físico deba lidiar con las complejidades de un centro de masa elevado debido a su diseño asimétrico, el objetivo principal radica en la aplicación práctica de la teoría de control para superar este reto.
 
+# Listado de materiales
+
+
