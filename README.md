@@ -58,7 +58,7 @@ Es importante definir que el alcance del proyecto se centra en la integración e
 | Barras estructurales |8| PLA | Impresión 3D | Barras 40mm y 50mm|
 | Ruedas |2| Plástico | - | - |
 | Pernos | 8 | Acero comercial | - | |-|
-### Electrónica
+### Componentes electrónicos
 | Componente | Cant. | Uso | 
 | :--- | :---: | ---: |
 | Placa Arduino UNO R3|1| Unidad lógica |
