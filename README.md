@@ -18,7 +18,7 @@
 * [Descripción](#descripción)
 * [Objetivos](#objetivos)
 * [Listado de materiales](#listado-de-materiales)
-* [Diseño](./Diseño/README.md)
+* [Diseño](#diseño)
 * [Electrónica](./Electrónica)
 * [Software y lógica](./Software)
 * [Archivos CAD](./EVA%20CADs/)
