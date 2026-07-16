@@ -22,7 +22,6 @@
 * [Electrónica](#electrónica)
 * [Software y lógica](#software-y-lógica)
 * [Archivos CAD](./EVA%20CADs/)
-* [Códigos](#código)
 * [Multimedia](./Multimedia)
   
 # Descripción
@@ -94,6 +93,23 @@ El impacto: Esta nueva arquitectura permitió independizar el sistema estructura
 
 # Software y lógica
 El bloque de texto que contiene el código con el que se programó el PID se puede encontrar en su respectiva [carpeta](./Código).
+
+El propósito de este proyecto es lograr que el robot mantenga el equilibrio en dos ruedas de forma autónoma, pero debido a naturaleza inestable tenderá a caer hacia adelante o hacia atrás. Para contrarrestar la gravedad se utiliza un sistema de control de lazo cerrado: calcula constantemente su ángulo de inclinación y acelera sus ruedas en la misma dirección de la caída, empujando la base debajo del centro de masa para regresar a su punto de equilibrio (0 grados). El código está diseñado para operar en un ciclo de tiempo determinado (200 Hz o cada 5 milisegundos) y se divide en tres pilares fundamentales:
+
+**1. Calibración y lectura sensorial**
+Al encender, el sistema ejecuta una fase de calibración de 3 segundos. Durante este tiempo, promedia los valores en reposo del sensor MPU6050 para establecer un "cero" real, compensando cualquier error de fábrica. 
+Durante el ciclo continuo, el sistema calcula el ángulo de inclinación actual  (`input_angle`), fusionando los datos del acelerómetro y el giroscopio mediante un filtro complementario. Este filtro se configura para un 98% en las lecturas del giroscopio y en un 2% en el acelerómetro, para corregir el error acumulado que sufre el giroscopio a largo plazo.
+
+**2. Controlador PID**
+El error entre el ángulo objetivo y el real alimenta la ecuación de control PID, que calcula la fuerza necesaria (`output_u`) para enderezar el robot:
+*   **Proporcional (Kp):**La fuerza principal;  cuanto más se inclina el robot, más potencia exige.
+*   **Integral (Ki):** Acumula errores pasados para corregir pequeñas desviaciones. Incluye un límite (*anti-windup*) para evitar que la memoria se sature si el sistema no logra estabilizarse inmediatamente.
+*   **Derivador (Kd):** Reacciona a la velocidad de la caída; frena la potencia si el robot ya está regresando rápidamente a su centro, evitando que oscile de un lado a otro.
+
+**3. Accionamiento de Motores y Seguridad**
+El código compensa la fricción sumando un pulso mínimo (`MIN_PWM = 30`), asegurando que los motores reaccionen instantáneamente ante cualquier corrección, por muy pequeña que sea. 
+Adicionalmente, se incluye un mecanismo de seguridad pasivo: si el ángulo supera los 60 grados de inclinación (`ANGULO_CORTE`), el sistema asume que la estructura ya cayó. Para evitar daños o movimientos erráticos por el suelo se corta la potencia y se reinicia la memoria del controlador.
+
 A continuación se puede observar el diagrama de lógica que sigue la programación de EVA.
 <details>
 <summary>Ver Diagrama de lógica</summary>
