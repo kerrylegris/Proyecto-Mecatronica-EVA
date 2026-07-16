@@ -15,11 +15,11 @@
 * [Descripción](#descripción)
 * [Objetivos](#objetivos)
 * [Listado de Materiales](./Listado%20de%20materiales/README.md#listado%20de%20materiales)
-* [Diseño]
-* [Electrónica]
-* [Software y lógica]
+* [Diseño](./Diseño/README.md)
+* [Electrónica](./Electrónica)
+* [Software y lógica](./Software)
 * [Archivos CAD](./EVA%20CADs/)
-* [Códigos]
+* [Códigos](./Códigos)
 * [Multimedia](/Multimedia)
   
 # Descripción
