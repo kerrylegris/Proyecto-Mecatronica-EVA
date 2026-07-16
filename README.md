@@ -22,7 +22,7 @@
 * [Electrónica](./Electrónica)
 * [Software y lógica](./Software)
 * [Archivos CAD](./EVA%20CADs/)
-* [Códigos](#codigo)
+* [Códigos](#código)
 * [Multimedia](./Multimedia)
   
 # Descripción
@@ -92,4 +92,5 @@ El impacto: Esta nueva arquitectura permitió independizar el sistema estructura
 
 
 # Código
+vlablabla
 [Código](./Código)
