@@ -102,7 +102,7 @@ Durante el ciclo continuo, el sistema calcula el ángulo de inclinación actual 
 
 **2. Controlador PID**
 El error entre el ángulo objetivo y el real alimenta la ecuación de control PID, que calcula la fuerza necesaria (`output_u`) para enderezar el robot:
-*   **Proporcional (Kp):**La fuerza principal;  cuanto más se inclina el robot, más potencia exige.
+*   **Proporcional (Kp):** La fuerza principal;  cuanto más se inclina el robot, más potencia exige.
 *   **Integral (Ki):** Acumula errores pasados para corregir pequeñas desviaciones. Incluye un límite (*anti-windup*) para evitar que la memoria se sature si el sistema no logra estabilizarse inmediatamente.
 *   **Derivador (Kd):** Reacciona a la velocidad de la caída; frena la potencia si el robot ya está regresando rápidamente a su centro, evitando que oscile de un lado a otro.
 
