@@ -93,5 +93,40 @@ El impacto: Esta nueva arquitectura permitió independizar el sistema estructura
 
 
 # Código
-vlablabla
-[Código](./Código)
+El bloque de texto que contiene el código con el que se programó el PID se puede encontrar en su respectiva [carpeta](./Código).
+A continuación se puede observar el diagrama de lógica que sigue la programación de EVA.
+<details>
+<summary>Ver Diagrama de lógica</summary>
+  
+```mermaid
+graph TD
+    %% Fase de Inicialización
+    A([Inicio de Sistema]) --> B[Configurar Serial e I2C]
+    B --> C[inicializarMOTORS]
+    C --> D[inicializarSENSORS]
+    D --> E{¿Pasaron 3 seg?}
+    E -- No --> F[Leer y acumular datos MPU]
+    F --> E
+    E -- Sí --> G[Calcular offsets]
+    G --> H[Guardar prev_time]
+
+    %% Bucle Principal y Peaje de Tiempo
+    H --> I([Inicio Loop])
+    I --> J[Calcular dt]
+    J --> K{¿dt >= 0.005s?}
+    K -- No --> I
+    K -- Sí --> L[leerSENSORS y calcular input_angle]
+    
+    %% Secuencia de Control
+    L --> M{¿Ángulo > 60°?}
+    M -- Sí --> N[output_u = 0 y borrar memorias]
+    N --> P[controlarMOTORS]
+    
+    M -- No --> O[calcularPID para obtener output_u]
+    O --> P
+    
+    P --> Q[imprimirPLOTTER]
+    Q --> R[Actualizar prev_time]
+    R --> I
+```
+</details>
