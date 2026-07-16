@@ -1,4 +1,7 @@
 # Proyecto-Mecatronica 4250-EVA
+<img width="300" height="390" alt="evacad" src="https://github.com/user-attachments/assets/443c59ea-fcce-4dee-b742-e1b85fc6967b" />
+<img width="300" height="390" alt="EVAFinal" src="https://github.com/user-attachments/assets/e9ec1b0f-8684-41dc-a560-5a8fb5af7053" />
+
 ## Integrantes
 * Agustín Ketterer
 * Isabella Silva
@@ -44,3 +47,4 @@ El objetivo principal de este proyecto es el diseño mecatrónico y la construcc
 Para lograr este objetivo, se integrarán componentes electrónicos esenciales utilizando un microcontrolador Arduino UNO como unidad central de procesamiento. Este gestionará la lógica de control programada en C++ y la lectura continua de datos del sensor inercial MPU-6050 (encargado de medir los ángulos de inclinación) para comandar los actuadores (motores DC acoplados a las ruedas). Además, el proyecto incluye el diseño de una estética original y atractiva, estructurando el modelo CAD en niveles internos para lograr la geometría fluida del personaje sin comprometer la viabilidad mecánica del péndulo invertido.
 
 Es importante definir que el alcance del proyecto se centra en la integración exitosa del hardware y en la demostración de un sistema de autobalanceo. Por lo tanto, aunque el prototipo físico deba lidiar con las complejidades de un centro de masa elevado debido a su diseño asimétrico, el objetivo principal radica en la aplicación práctica de la teoría de control para superar este reto.
+
