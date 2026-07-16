@@ -19,8 +19,8 @@
 * [Electrónica](./Electrónica)
 * [Software y lógica](./Software)
 * [Archivos CAD](./EVA%20CADs/)
-* [Códigos](/Código)
-* [Multimedia](/Multimedia)
+* [Códigos](./Código)
+* [Multimedia](./Multimedia)
   
 # Descripción
 El presente repositorio contiene la documentación, códigos y modelos 3D correspondientes al desarrollo del Robot Autobalancín "EVA".
