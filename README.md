@@ -79,7 +79,7 @@ Minimalismo de Alta Tecnología: La ciencia ficción y el diseño industrial mod
 
 El Movimiento: El concepto original de EVA es el de una sonda que levita o flota suavemente. Aunque el prototipo mecatrónico utiliza ruedas, la dinámica misma de un robot autobalancín —que constantemente ajusta su centro de masa para mantenerse erguido sobre un solo eje— genera un movimiento fluido que imita conceptualmente la sensación de "flotabilidad" o anti-gravedad, alineándose a la perfección con la percepción de un vehículo futurista.
 
-![Inspiración: Personaje EVA](./Multimedia/eva.jpg)
+<img src="./Multimedia/eva.jpg" alt="Inspiración: Personaje EVA" width="200">
 ## Iteraciones
 El desarrollo físico del robot fue un proceso iterativo, motivado por la necesidad de conciliar la compleja geometría de EVA con los estrictos requerimientos dinámicos y de distribución de masa de un péndulo invertido.
 Iteración 1: Diseño preliminar con placa vertical
