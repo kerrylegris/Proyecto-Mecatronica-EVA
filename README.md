@@ -90,11 +90,19 @@ Iteración 2: Transición al chasis horizontal por niveles
 La solución: Se descartó la placa vertical en favor de un chasis interno estructurado en pisos horizontales (mediante placas de acrílico cortadas en láser y separadores cilíndricos).
 El impacto: Esta nueva arquitectura permitió independizar el sistema estructural de la carcasa externa. Al tener niveles, se logró bajar drásticamente el centro de gravedad ubicando la batería y los motores en la base, lo cual fue fundamental para compensar la alta inercia generada por el apéndice superior impreso en 3D (la cabeza de EVA).
 
+# Electrónica
+
+
+
 
 # Software y lógica
-El bloque de texto que contiene el código con el que se programó el PID se puede encontrar en su respectiva [carpeta](./Código).
+El bloque de texto que contiene el código con el que se programó el PID se puede encontrar en su respectiva [carpeta](./Código). 
 
-El propósito de este proyecto es lograr que el robot mantenga el equilibrio en dos ruedas de forma autónoma, pero debido a naturaleza inestable tenderá a caer hacia adelante o hacia atrás. Para contrarrestar la gravedad se utiliza un sistema de control de lazo cerrado: calcula constantemente su ángulo de inclinación y acelera sus ruedas en la misma dirección de la caída, empujando la base debajo del centro de masa para regresar a su punto de equilibrio (0 grados). El código está diseñado para operar en un ciclo de tiempo determinado (200 Hz o cada 5 milisegundos) y se divide en tres pilares fundamentales:
+El propósito de este proyecto es lograr que el robot mantenga el equilibrio en dos ruedas de forma autónoma, pero debido a naturaleza inestable tenderá a caer hacia adelante o hacia atrás. Para contrarrestar la gravedad se utiliza un sistema de control de lazo cerrado que calcula constantemente su ángulo de inclinación y acelera sus ruedas en la misma dirección de la caída, empujando la base debajo del centro de masa para regresar a su punto de equilibrio (0 grados). La siguiente imagen corresponde al diagrama del sistema de control que muestra el flujo de las señales, más adelante se explica con mayor detalle la descripción de cada parte.
+
+<img width="1000" height="348" alt="Diagrama eva (1)" src="https://github.com/user-attachments/assets/af541711-08c7-4479-a14c-5b32caffc09b" />
+
+El código está diseñado para operar en un ciclo de tiempo determinado (200 Hz o cada 5 milisegundos) y se divide en tres pilares fundamentales:
 
 **1. Calibración y lectura sensorial**
 Al encender, el sistema ejecuta una fase de calibración de 3 segundos. Durante este tiempo, promedia los valores en reposo del sensor MPU6050 para establecer un "cero" real, compensando cualquier error de fábrica. 
