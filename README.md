@@ -92,6 +92,18 @@ El impacto: Esta nueva arquitectura permitió independizar el sistema estructura
 
 # Electrónica
 
+El hardware de este robot autobalancín está compuesto por un microcontrolador central que procesa la información sensorial y comanda los actuadores en cuestión de milisegundos. La arquitectura electrónica se divide en los siguientes componentes principales:
+
+*   **Microcontrolador (Arduino):** Ejecuta el lazo de control PID a alta velocidad y coordina la comunicación continua entre los sensores y el actuador.
+*   **Módulo MPU6050 (Giroscopio y Acelerómetro):** Es el encargado de medir la inclinación física del cuerpo completo del robot en el espacio. Es el sensor principal que proporciona la retroalimentación del ángulo real.
+*   **Driver de Motores L298N:** Actúa como puente de potencia; recibe las señales lógicas de dirección y los pulsos de velocidad (PWM) desde el microcontrolador, y las transforma en la corriente eléctrica necesaria para mover ambos motores.
+*   **Motores DC:** Proporcionan el torque necesario para desplazar la base de la estructura e intentar devolver el centro de masa a su punto de equilibrio vertical.
+
+**Distribución de Energía**
+Debido a la alta demanda de corriente que exigen los motores al cambiar de dirección abruptamente para equilibrar la estructura, el circuito requiere una fuente de alimentación externa con buena capacidad de descarga, conectada directamente al módulo L298N. 
+
+<!-- A continuación, se presenta el esquema detallado de las conexiones del sistema:y -->
+
 
 
 
